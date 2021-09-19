@@ -1,0 +1,212 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AddNewSeller">
+
+    <include layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/interneton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/image_view_logo"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="45dp"
+                        android:background="@drawable/mmlogo" />
+
+                    <TextView
+                        android:id="@+id/slogan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image_view_logo"
+                        android:gravity="center"
+                        android:inputType="textMultiLine"
+                        android:text="It's not just business, we are relation developer."
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/slogan"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Add New Seller"
+                            android:textAllCaps="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                            android:textColor="#121D85"
+                            android:textStyle="bold"
+                            android:typeface="monospace"
+                            app:fontFamily="@font/arimo_bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/linearLayout1"
+                        android:background="#ffffff"
+                        android:orientation="vertical"
+                        android:padding="18dp">
+
+                        <EditText
+                            android:id="@+id/sellername"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:background="@drawable/edit_text_round_gray_background"
+                            android:drawableLeft="@drawable/ic_name"
+                            android:drawablePadding="16dp"
+                            android:hint="Name"
+                            android:inputType="text"
+                            android:padding="12dp" />
+
+
+                        <EditText
+                            android:id="@+id/sellerid"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:background="@drawable/edit_text_round_gray_background"
+                            android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+                            android:drawablePadding="16dp"
+                            android:hint="Seller ID"
+                            android:inputType="text"
+                            android:padding="12dp" />
+
+
+                        <EditText
+                            android:id="@+id/sellerpwd"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:background="@drawable/edit_text_round_gray_background"
+                            android:drawableLeft="@drawable/ic_baseline_pin_24"
+                            android:drawablePadding="16dp"
+                            android:hint="Seller's PIN"
+                            android:inputType="number"
+                            android:padding="12dp" />
+
+                        <EditText
+                            android:id="@+id/sellercontact"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:background="@drawable/edit_text_round_gray_background"
+                            android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+                            android:drawablePadding="16dp"
+                            android:hint="Seller Contact"
+                            android:inputType="phone"
+                            android:padding="12dp" />
+
+                        <EditText
+                            android:id="@+id/selleraddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="12dp"
+                            android:background="@drawable/edit_text_round_gray_background"
+                            android:drawableLeft="@drawable/ic_baseline_pin_drop_24"
+                            android:drawablePadding="16dp"
+                            android:hint="Seller Address"
+                            android:inputType="textMultiLine"
+                            android:padding="12dp" />
+
+                        <TextView
+                            android:id="@+id/text_view_forget_password"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:text="Forget Password?"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/submit_form_add_seller"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/buttons"
+                            android:text="Continue"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/internetoff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/nointenetimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="200dp"
+                    android:contentDescription="@string/app_name"
+                    android:foregroundGravity="center_horizontal"
+                    android:src="@drawable/nointernet"
+                    >
+
+                </ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:visibility="invisible" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+

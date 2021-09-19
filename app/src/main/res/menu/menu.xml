@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/searchmenu"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search Menu"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" >
+    </item>
+
+<!--    <item-->
+<!--        android:id="@+id/ordersplaced"-->
+<!--        android:title="Your Orders"-->
+<!--        app:showAsAction="never" >-->
+<!--    </item>-->
+    <item
+        android:id="@+id/updatecart"
+        app:actionLayout="@layout/cartlayout_new"
+        android:icon="@drawable/ic_baseline_shopping_cart_244"
+        android:title="Cart"
+
+        app:showAsAction="always" >
+    </item>
+
+<!--    <item-->
+<!--        android:id="@+id/updatecart"-->
+<!--        android:title="Your Cart"-->
+<!--        app:showAsAction="never">-->
+<!--    </item>-->
+
+    <item
+        android:id="@+id/prevorder"
+        android:title="Past Orders"
+        app:showAsAction="never">
+    </item>
+<!--    <item-->
+<!--        android:id="@+id/contactus"-->
+<!--        android:title="Contact Raat Deen"-->
+<!--        app:showAsAction="never">-->
+<!--    </item>-->
+    <item
+        android:id="@+id/contactus"
+        android:title="Contact Herbal Point"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/contactdev"
+        android:title="Contact Developer"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/userlogout"
+        android:title="User Logout"
+        app:showAsAction="never">
+    </item>
+
+
+
+
+
+</menu>

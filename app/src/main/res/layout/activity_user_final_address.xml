@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:animateLayoutChanges="true"
+    tools:context=".UserFinalAddress">
+
+    <include layout="@layout/toolbar"></include>
+
+
+    <LinearLayout
+        android:id="@+id/interneton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Please Confirm Your Delivery Address"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="60dp"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <EditText
+                android:id="@+id/confirm_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edit_text_round_gray_background"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawablePadding="16dp"
+                android:hint="Name"
+                android:inputType="text"
+                android:padding="12dp" />
+
+
+            <EditText
+                android:id="@+id/confirm_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edit_text_round_gray_background"
+                android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                android:drawablePadding="16dp"
+                android:hint="Contact"
+                android:inputType="text"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/confirm_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edit_text_round_gray_background"
+                android:drawableLeft="@drawable/ic_baseline_home_24"
+                android:drawablePadding="16dp"
+                android:hint="Address"
+                android:inputType="textMultiLine"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/confirm_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edit_text_round_gray_background"
+                android:drawableLeft="@drawable/ic_baseline_pin_drop_24"
+                android:drawablePadding="16dp"
+                android:hint="Pincode"
+                android:inputType="text"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/confirm_confrim"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttons"
+                android:padding="5dp"
+                android:text="Confirm Address"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/nointenelayoutt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/nointenet"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:contentDescription="@string/app_name"
+            android:foregroundGravity="center_horizontal"
+            android:src="@drawable/nointernet">
+
+        </ImageView>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+

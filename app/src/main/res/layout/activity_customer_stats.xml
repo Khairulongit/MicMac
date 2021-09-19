@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Seller.CustomerStatsActivity">
+    <!--    <include layout="@layout/toolbar"></include>-->
+
+    <include layout="@layout/toolbar"></include>
+
+
+    <RelativeLayout
+        android:id="@+id/rltv2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/orderstypr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="New Orders "
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"></TextView>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/filtereddata1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rltv2"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/pending_orders1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Pending"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/confirm_orders1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Confirmed"
+            android:textColor="@color/black"
+            android:textStyle="normal"></TextView>
+
+        <TextView
+            android:id="@+id/cancel_orders1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Cancelled"
+            android:textColor="@color/black"></TextView>
+
+        <TextView
+            android:id="@+id/delievr_orders1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Delivered"
+            android:textColor="@color/black"></TextView>
+
+        <TextView
+            android:id="@+id/all_orders1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="All Orders"
+            android:textColor="@color/black"></TextView>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/customerRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/filtereddata1">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!--        tools:listitem="@layout/myorders_layout"-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:contentDescription="Add New"
+        android:src="@drawable/ic_baseline_filter_alt_24"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/nointenet"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:contentDescription="@string/app_name"
+        android:foregroundGravity="center_horizontal"
+        android:src="@drawable/nointernet"
+        android:visibility="gone">
+
+    </ImageView>
+
+
+</RelativeLayout>

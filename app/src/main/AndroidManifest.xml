@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tchnodynamic.micmac">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MicMac"
+        tools:replace="android:theme">
+        <activity android:name=".Admin.AddNewSeller"></activity>
+        <activity android:name=".Admin.CheckSellersData" />
+        <activity android:name=".Seller.CustomerStatsActivity" />
+        <activity android:name=".Splash" />
+        <activity android:name=".Seller.LoginActivitySeller" />
+        <activity android:name=".Admin.LoginActivityAdmin" />
+        <activity android:name=".Seller.SellerConsoleActivity" />
+        <activity android:name=".Technodynamic" />
+        <activity android:name=".Admin.ConfirmFinalOrdersActivity" />
+        <activity android:name=".Admin.AdminAllOrders" />
+        <activity android:name=".Admin.ModifyProductsAdmin" />
+        <activity android:name=".Admin.SellerAddNewProduct" />
+        <activity android:name=".LoginUser" />
+        <activity android:name=".ProductDetails" />
+        <activity android:name=".MyOrdersActivity" />
+        <activity android:name=".UserFinalAddress" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".AllProducts" />
+        <activity android:name=".BuyerRegistration" />
+        <activity android:name=".Admin.AdminCategoryActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

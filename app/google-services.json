@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "256614119570",
+    "firebase_url": "https://tdapp-a3255-default-rtdb.firebaseio.com",
+    "project_id": "tdapp-a3255",
+    "storage_bucket": "tdapp-a3255.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256614119570:android:7c801007692be67e220e4b",
+        "android_client_info": {
+          "package_name": "com.tchnodynamic.herbalpoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256614119570-fin85336kfr85oek2c1pdno6o6d9nq6k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tchnodynamic.herbalpoint",
+            "certificate_hash": "59eb1b5c06c4d639e3c55c296b928b7338a975b2"
+          }
+        },
+        {
+          "client_id": "256614119570-r5uadn19tuhmcfae5r464ge72o2dhlus.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tchnodynamic.herbalpoint",
+            "certificate_hash": "2fd4d3aa76af4f01f7794ca0e7a53319535a20ee"
+          }
+        },
+        {
+          "client_id": "256614119570-iis7u6p05tp7p2q758g6hs1bnmp496ei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcjJKhdjqfYMXicC2MXkrEIixZjvIenFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256614119570-iis7u6p05tp7p2q758g6hs1bnmp496ei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256614119570:android:f47a27a99e555511220e4b",
+        "android_client_info": {
+          "package_name": "com.tchnodynamic.micmac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256614119570-iis7u6p05tp7p2q758g6hs1bnmp496ei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcjJKhdjqfYMXicC2MXkrEIixZjvIenFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256614119570-iis7u6p05tp7p2q758g6hs1bnmp496ei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256614119570:android:e69f64855c6f6146220e4b",
+        "android_client_info": {
+          "package_name": "com.technodynamic.technodynamiclanding"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256614119570-iis7u6p05tp7p2q758g6hs1bnmp496ei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcjJKhdjqfYMXicC2MXkrEIixZjvIenFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256614119570-iis7u6p05tp7p2q758g6hs1bnmp496ei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
